@@ -1,5 +1,5 @@
 @import './base.css';
-
+/*start header*/
 .header{
     position: sticky;
     top: 0;
@@ -43,4 +43,78 @@
     .nav{
         display:none;
     }
+}
+/*end header*/
+
+/*start footer*/
+.footer{
+    background-color: #393E46;
+    color:#fff;
+    padding:50px 0;
+}
+.footer .row{
+    gap:40px;
+}
+.footer a{
+    color:#fff;
+}
+.footer .footer-start, 
+.footer .footer-end{
+    width:calc((100% - 40px) / 2 );
+}
+
+.footer-start{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:40px;
+}
+.footer .footer-start .logo{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.footer .footer-start .logo img{
+    width:35px;
+}
+
+.footer .footer-start .logo a{
+    font-size: 14px;
+}
+
+.footer .footer-start p{
+    color:#F4F4F4;
+    font-size: 14px;
+    font-weight: 200;
+}
+.footer .footer-start .icons{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.footer .footer-start .icons img{
+    border: 1px solid #fff;
+    padding:10px;
+    width: 15px;
+    height: 15px;
+    box-sizing: content-box;
+    gap:10px;
+}
+
+.footer-end .row{
+    align-items: flex-start;
+}
+
+.footer-end .footer-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:30px;
+}
+.footer-end .footer-item ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10px;
 }
