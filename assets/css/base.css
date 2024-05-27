@@ -15,7 +15,6 @@
 }
 body{ 
     font-family: var(--mainFont);
-    height:6000px;
 }
 .container{
     width:calc(100% - 120px);

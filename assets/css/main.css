@@ -65,7 +65,6 @@
 }
 /*end header*/
 /*start introduction*/
-
 .introduction{
     padding: 50px 0;
 }
@@ -98,13 +97,15 @@
  .control-buttons{
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap:25px;
 }
 .control-buttons button{
     padding:5px 50px;
     border-radius: 4px;
     background-color: var(--mainColor);
     border: none;
+    color:#fff;
+    font-weight: 600;
 }
 .play-button{
     display: flex;
@@ -114,6 +115,7 @@
 }
  .control-buttons a{
     align-items: center;
+    font-weight: 600;
 }
 .play-button img{
     border:1px solid #fff;
@@ -132,10 +134,12 @@
        padding:20px 0;
     }
 }
+/*end introduction*/
 /*start given courses*/
 .given-courses{
     padding: 50px 0;
     position:relative;
+    background-color:#F5F5F5;
 }
 .given-courses-information{
     width:calc((100% - 30px) / 2);
@@ -210,6 +214,71 @@
     }
 }
 /*end given courses*/
+/*start taking courses*/
+.taking-courses{
+    padding: 100px 0;
+    background-color:var(--mainColor);
+}
+.taking-courses .image{
+    width:calc((100% - 20px) / 2);
+ }
+ .taking-courses-information{
+    width:calc((100% - 20px) / 2);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .taking-courses-information span{
+    color:#f0c932;
+    font-size: 12px;
+ }
+ .taking-courses-information h2{
+    font-size:30px;
+    color:#fff;
+ }
+ .taking-courses-information p{
+    font-size: 14px;
+    color:#dddddd;
+    font-weight: 400;
+ }
+ .taking-courses-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 150px;
+ }
+ .taking-courses-content .taking-courses-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+ }
+ .taking-courses-content .taking-courses-item span{
+    font-weight: 600;
+    font-size: 20px;
+ }
+ .taking-courses-content .taking-courses-item h3{
+    font-size: 14px;
+    color:#dddddd;
+    font-weight: 300;
+ }
+ @media (max-width:1200px){
+    .taking-courses .image{
+        width: 100%;
+    }
+    .taking-courses-information{
+        flex-grow: 1;
+    }
+ }
+ @media(max-width:630px){
+    .taking-courses-content{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+ 
 /*start courses*/
 .courses{
     padding: 50px 0;
