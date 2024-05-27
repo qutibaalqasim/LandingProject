@@ -64,6 +64,74 @@
     }
 }
 /*end header*/
+/*start introduction*/
+
+.introduction{
+    padding: 50px 0;
+}
+.introduction-content{
+    width:calc((100% - 30px) / 2);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:20px;
+}
+.introduction-content:first-of-type p{
+    color:var(--mainColor);
+    font-size:20px;
+}
+.introduction-content span{
+    font-weight: 700;
+}
+.introduction-content h1{
+    font-size:30px;
+    font-weight: 800;
+}
+.introduction-content h1 span{
+    color: var(--mainColor);
+    font-weight: 900;
+}
+.introduction-content .main-paragraph{
+    color:#969696 !important;
+    font-size: 16px !important;
+}
+ .control-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.control-buttons button{
+    padding:5px 50px;
+    border-radius: 4px;
+    background-color: var(--mainColor);
+    border: none;
+}
+.play-button{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    
+}
+ .control-buttons a{
+    align-items: center;
+}
+.play-button img{
+    border:1px solid #fff;
+    border-radius: 50%;
+    background-color: #f0c932;
+}
+.introduction .base-image{
+    width:calc((100% - 30px) / 2);
+}
+@media (max-width:700px){
+    .introduction-content{
+        width:100%
+    }
+    .base-image{
+       flex-grow: 1;
+       padding:20px 0;
+    }
+}
 /*start given courses*/
 .given-courses{
     padding: 50px 0;
