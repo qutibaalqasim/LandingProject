@@ -13,7 +13,7 @@
     --subFont: "Inter", sans-serif;
     --mainColor:#545BE8;
 }
-body{
+body{ 
     font-family: var(--mainFont);
     height:6000px;
 }
