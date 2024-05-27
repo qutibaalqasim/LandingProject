@@ -213,6 +213,19 @@
         width:100%;
     }
 }
+@media(max-width:500px){
+    .controler{
+        padding: 20px 100px;
+    }
+    .given-courses-sections .section{
+        width:100%;
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:15px;
+
+    }
+}
 /*end given courses*/
 /*start taking courses*/
 .taking-courses{
@@ -295,9 +308,7 @@
     
 }
 .course{
-   width:calc((100% - 20px) / 2);
-  
-  
+   width:calc((100% - 20px) / 2); 
 }
 .course-card{
     position: relative;
@@ -305,7 +316,7 @@
 .course .row{
     justify-content: space-around;
 }
-.course .row:first-of-type span{
+.course .row span:first-of-type {
     color:var(--mainColor);
     font-size: 10px;
     font-weight: 400;
@@ -373,8 +384,11 @@
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: flex-start;
     gap:50px;
-    padding:0 200px;
+    padding : 0 50px;
+    position: relative;
+    
 }
 .course-description span{
     font-size: 14px;
@@ -382,8 +396,8 @@
     color: var(--mainColor);
 }
 .course-description h2{
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 26px;
     font-family: var(--mainFont);
 }
 .course-description p{
@@ -392,6 +406,7 @@
     color:#969696;
     line-height: 24px;
     font-family: var(--subFont);
+    text-align: center;
 }
 .course-description a{
     width:40%;
@@ -405,20 +420,50 @@
 }
 @media (max-width:950px){
     .course-items{
-        flex-grow: 1;
+        width: 100%;
     }
-    .course-description{
-        flex-grow: 1;
-        align-items: flex-start;
-        
-    }
+    
 }
 @media (max-width:500px){
     .course-info span:first-of-type{
-        padding: 0;
+        padding: 0 ;
     }
-
+    .course-description{
+        flex-grow: 1;
+        align-items:flex-start;
+    }
+    .course-description span{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .course-description h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding:30px 0 ;
+    }
+    .course-description p{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding:90px 0 ;
+    }
+    .course-description a{
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+       
+        right: 0;
+        bottom: 0;
+        padding: 3px 10px;
+        
+        
+    }
+    
 }
+
 /*end courses*/
 /*start testimonials*/
 .testimonials{
@@ -560,10 +605,19 @@
     flex-wrap: wrap;
     gap:10px;
 }
-@media (max-width: 320px){
+@media (max-width: 400px){
     .footer-end {
         text-align: center;
         align-items: center;
+    }
+    .footer .footer-start .icons{
+        justify-content: center;
+    }
+    .footer .footer-start .logo{
+        justify-content: center;
+    }
+    .footer .footer-start p{
+        text-align: center;
     }
 }
 /*end footer*/
